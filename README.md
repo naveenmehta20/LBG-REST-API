@@ -3,7 +3,7 @@
 This application satisfies the requirements of Part I, 1. of the LBG project specification.
 
 ## Installation
-
+Test
 To initialise the project you will need to install several dependencies, open up a git bash terminal from the repo directory and run the command:
 
 ~~~ bash
