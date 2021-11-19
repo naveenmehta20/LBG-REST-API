@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: naveen-deployment
+  labels:
+    app: naveen-new-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: naveen-app
+  template:
+    metadata:
+      labels:
+        app: naveen-app
+    spec:
+      containers:
+      - name: naveen-app
+        image: gcr.io/lbg-training/naveen-node-app:100
+        ports:
+        - containerPort: 4000
